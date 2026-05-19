@@ -4,9 +4,9 @@
 # hermes-paperclip-adapter installed at runtime via /api/adapters/install.
 #
 # Build:   docker build -t paperclip-hermes .
-# Pin:     PAPERCLIP_TAG=v2026.423.0 docker build --build-arg PAPERCLIP_TAG ...
+# Pin:     PAPERCLIP_TAG=sha-3e6610f docker build --build-arg PAPERCLIP_TAG ...
 
-ARG PAPERCLIP_TAG=v2026.423.0
+ARG PAPERCLIP_TAG=sha-3e6610f
 ARG HERMES_VERSION=
 ARG WITH_BROWSER_TOOLSET=0
 

@@ -41,6 +41,6 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            PAPERCLIP_TAG=${{ inputs.paperclip_tag || 'v2026.423.0' }}
+            PAPERCLIP_TAG=${{ inputs.paperclip_tag || 'sha-3e6610f' }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
