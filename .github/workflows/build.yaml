@@ -8,7 +8,7 @@ on:
     inputs:
       paperclip_tag:
         description: "Upstream Paperclip image tag"
-        default: "v2026.423.0"
+        default: "sha-3e6610f"
 
 permissions:
   contents: read
