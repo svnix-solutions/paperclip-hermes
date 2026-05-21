@@ -12,8 +12,6 @@ ARG WITH_BROWSER_TOOLSET=1
 
 FROM ghcr.io/paperclipai/paperclip:${PAPERCLIP_TAG}
 
-USER root
-
 ARG HERMES_VERSION
 ARG WITH_BROWSER_TOOLSET
 
@@ -32,5 +30,3 @@ RUN if [ "$WITH_BROWSER_TOOLSET" = "1" ]; then \
 
 ENV HERMES_HOME=/paperclip/.hermes
 RUN mkdir -p /paperclip/.hermes && chown -R node:node /paperclip
-
-USER node
